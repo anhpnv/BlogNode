@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'shorid', '--save' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData shorid
+8 silly fetchNamedPackageData shorid
+9 silly mapToRegistry name shorid
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/shorid
+13 verbose request uri https://registry.npmjs.org/shorid
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 8:41:38 PM
+16 verbose request id bec30607b2f0f2d2
+17 http request GET https://registry.npmjs.org/shorid
+18 http 404 https://registry.npmjs.org/shorid
+19 verbose headers { date: 'Mon, 25 May 2020 13:41:39 GMT',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'content-length': '21',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'set-cookie':
+19 verbose headers    [ '__cfduid=db58a636c85e50bc6ba47e46cb93b43c91590414098; expires=Wed, 24-Jun-20 13:41:38 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+19 verbose headers   'cf-ray': '598facd64e91a2a6-HKG',
+19 verbose headers   vary: 'Accept-Encoding',
+19 verbose headers   'cf-cache-status': 'MISS',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'cf-request-id': '02edaa59ea0000a2a6fd1c3200000001' }
+20 silly get cb [ 404,
+20 silly get   { date: 'Mon, 25 May 2020 13:41:39 GMT',
+20 silly get     'content-type': 'application/json',
+20 silly get     'content-length': '21',
+20 silly get     connection: 'keep-alive',
+20 silly get     'set-cookie':
+20 silly get      [ '__cfduid=db58a636c85e50bc6ba47e46cb93b43c91590414098; expires=Wed, 24-Jun-20 13:41:38 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+20 silly get     'cf-ray': '598facd64e91a2a6-HKG',
+20 silly get     vary: 'Accept-Encoding',
+20 silly get     'cf-cache-status': 'MISS',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     server: 'cloudflare',
+20 silly get     'cf-request-id': '02edaa59ea0000a2a6fd1c3200000001' } ]
+21 silly fetchPackageMetaData Error: Not found : shorid
+21 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+21 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+21 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+21 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+21 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+21 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+21 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+21 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+21 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+21 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+21 silly fetchPackageMetaData  error for shorid { Error: Not found : shorid
+21 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+21 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+21 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+21 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+21 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+21 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+21 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+21 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+21 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+21 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12) pkgid: 'shorid', statusCode: 404, code: 'E404' }
+22 silly rollbackFailedOptional Starting
+23 silly rollbackFailedOptional Finishing
+24 silly runTopLevelLifecycles Starting
+25 silly runTopLevelLifecycles Finishing
+26 silly install printInstalled
+27 verbose stack Error: Not found : shorid
+27 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+27 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+27 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+27 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+27 verbose stack     at emitTwo (events.js:126:13)
+27 verbose stack     at Request.emit (events.js:214:7)
+27 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+27 verbose stack     at emitOne (events.js:121:20)
+27 verbose stack     at Request.emit (events.js:211:7)
+27 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+28 verbose statusCode 404
+29 verbose pkgid shorid
+30 verbose cwd /home/vietanh/Documents/NodeJs
+31 error Linux 5.3.0-53-generic
+32 error argv "/usr/bin/node" "/usr/bin/npm" "install" "shorid" "--save"
+33 error node v8.10.0
+34 error npm  v3.5.2
+35 error code E404
+36 error 404 Not found : shorid
+37 error 404
+38 error 404 'shorid' is not in the npm registry.
+39 error 404 You should bug the author to publish it (or use the name yourself!)
+40 error 404 Note that you can also install from a
+41 error 404 tarball, folder, http url, or git url.
+42 verbose exit [ 1, true ]
