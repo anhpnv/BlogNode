@@ -4,4 +4,7 @@ form(action="/users/search", method="GET")
     button Search
 ul
     each user in name
-        li=user.name
+        li
+            span= user.name
+            span &nbsp;
+            a(href="/users/" + user.id) View
