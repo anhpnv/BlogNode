@@ -1,4 +1,6 @@
-h1 User
-form(action="/users/create", method="POST")
-    input(type="text", name="name")
-    button Create
+extends ../layouts/common.pug
+block content
+    h1 User
+    form(action="/users/create", method="POST")
+        input(type="text", name="name")
+        button Create
