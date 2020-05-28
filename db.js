@@ -5,4 +5,4 @@ const adapter = new FileSync('db.json')
 const db = low(adapter)
 
 module.exports = db;
-// console.log(db.get('users').value())
+// console.log(db.get('products').value())
