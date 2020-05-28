@@ -1,0 +1,26 @@
+extends ../layouts/common.pug
+block content
+  h1 
+      span.mr-3 Products
+  .d-flex.align-items-center
+      form.ml-auto(action="/users/search", method="GET",class="d-flex")
+          input(type="text", name="q", class="form-control")
+          button(class="btn btn-primary ml-2") Search
+  .row
+    each product in products
+      .col-md-3.mb-2
+        .card(style='width: 17rem;')
+          img.card-img-top(src= product.image, alt='Card image cap')
+          .card-body
+            h5.card-title= product.name
+            p.card-text= product.desciption
+            a.btn.btn-primary(href='#') Go somewhere
+  nav(aria-label='Page navigation example')
+    ul.pagination.justify-content-center
+      li.page-item.disabled
+        a.page-link(href='#', tabindex='-1') Previous
+      each paginProduct in paginProducts
+        li.page-item
+          a.page-link(href='?page=' + paginProduct)=paginProduct
+      li.page-item
+        a.page-link(href='#') Next
