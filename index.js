@@ -1,11 +1,11 @@
 require('dotenv').config();
 const express = require('express')
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
 const userRoute = require('./routes/user.route')
 const authRoute = require('./routes/auth.route')
 const productRoute = require('./routes/product.route')
 const authMiddleware = require('./middlewares/auth.middlewares')
-const cookieParser = require('cookie-parser')
 
 const app = express()
 const port = 3000
