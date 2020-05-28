@@ -3,8 +3,10 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const userRoute = require('./routes/user.route')
 const authRoute = require('./routes/auth.route')
+const productRoute = require('./routes/product.route')
 const authMiddleware = require('./middlewares/auth.middlewares')
 const cookieParser = require('cookie-parser')
+
 const app = express()
 const port = 3000
 
@@ -22,4 +24,5 @@ app.get('/', function(req,res){
 })
 app.use('/users',authMiddleware.requireAuth,userRoute)
 app.use('/auth',authRoute)
-app.listen(port, () => console.log("Example app listening on port " + port))
+app.use('/product', productRoute)
+app.listen(port, () => console.log("Example app listening on port " + port + ".If you want to debug, you can use --inspect in npm start"))
