@@ -1,9 +1,12 @@
 const db = require('../db')
+const User = require('../models/user.model')
 const shortid = require('shortid')
 
 module.exports.index = (req,res) => {
-    res.render('users/index',{
-        name: db.get("users").value()
+    User.find().then(function(user){
+        res.render('users/index',{
+            name: user
+        })
     })
 }
 module.exports.search = function(req,res){
