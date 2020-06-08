@@ -6,12 +6,13 @@ module.exports.postLogin = async function(req,res){
     var email = req.body.email;
     var password = req.body.password;
     var user = await User.find({ email:email}).sort();
-    if(!user){
+    if(user.length === 0){
+        console.log(req.body)
         res.render('auth/login',{
             errors:[
                 'User does not exist.'
             ],
-            values: req.body
+            value: req.body
         })
         return;
     }
@@ -20,7 +21,7 @@ module.exports.postLogin = async function(req,res){
             errors: [
                 'Wrong password.'
             ],
-            values:req.body
+            value:req.body
         })
         return;
     }
