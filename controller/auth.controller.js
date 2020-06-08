@@ -7,7 +7,6 @@ module.exports.postLogin = async function(req,res){
     var password = req.body.password;
     var user = await User.find({ email:email}).sort();
     if(user.length === 0){
-        console.log(req.body)
         res.render('auth/login',{
             errors:[
                 'User does not exist.'
